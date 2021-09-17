@@ -4,9 +4,9 @@
 Olá, esse é meu primeiro commit oficial e admito que não é um projeto nada complicado.
 Porém, como eu me desafiei para fazer uma mudança, resolvi subir no git e vou explicar o porquê.
 
-IDE: Eclipse
-Versão do Projeto: Java SE-16
-JDK 11.0.11 (64-bit)
+* IDE: Eclipse
+* Versão do Projeto: Java SE-16
+* JDK 11.0.11 (64-bit)
 
 Objetivo: Elaborar um sistema de fazer pedidos.
 
