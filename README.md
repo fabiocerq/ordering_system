@@ -21,10 +21,10 @@ O professor seguiu a seguinte estrutura:
 - Main
 
 2. Entities 
-- Product (parâmetros: name, price)
-- Client (parâmetros: name, email, birth date)
-- OrderItem (parâmetros: quantity, price & método: subTotal())
-- Order (parâmetros: date (actual moment), order status & métodos: addItem, removeItem, total()) => apareceram os métodos add e remove porque uma lista foi criada para armazenar as informações de produto
+- Product (atributos: name, price)
+- Client (atributos: name, email, birth date)
+- OrderItem (atributos: quantity, price & método: subTotal())
+- Order (atributos: date (momento atual), order status & métodos: addItem, removeItem, total()) => apareceram os métodos add e remove porque uma lista foi criada para armazenar as informações de produto
 
 3. Enums
 - OrderStatus (PENDING_PAYMENT, PROCESSING, SHIPPED, DELIVERED)
@@ -36,9 +36,9 @@ Minha estrutura ficou assim:
 - Main
 
 2. Entities 
-- Product (parâmetros: name, price, quantity & método: subtotal()) => método subTotal implementado
-- Client (parâmetros: name, email, birth date)
-- Order (parâmetros: date (actual moment), order status & métodos: addItem, removeItem, total()) 
+- Product (atributos: name, price, quantity & método: subtotal()) => método subTotal implementado
+- Client (atributos: name, email, birth date)
+- Order (atributos: date (actual moment), order status & métodos: addItem, removeItem, total()) 
 
 3. Enums
 - OrderStatus (PENDING_PAYMENT, PROCESSING, COMPLETED, SHIPPED, DELIVERED) => Status COMPLETED criado porque me parecia razoável ter um estágio entre PROCESSING e SHIPPED para melhorar a gestão de informação.
