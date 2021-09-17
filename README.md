@@ -17,26 +17,29 @@ o instante do sistema: new Date()"
 
 O professor seguiu a seguinte estrutura:
 
-- Application
-     Main
-- Entities 
-     \nProduct (parâmetros: name, price)
-     Client (parâmetros: name, email, birth date)
-     OrderItem (parâmetros: quantity, price & método: subTotal())
-     Order (parâmetros: date (actual moment), order status & métodos: addItem, removeItem, total()) => apareceram os métodos add e remove porque uma lista foi criada para armazenar as informações de produto
-- Enums
-     OrderStatus (PENDING_PAYMENT, PROCESSING, SHIPPED, DELIVERED)
+1. Application
+- Main
 
-Contudo, a classe OrderItem estava me incomodando porque me parecia inútil, visto que eu poderia apenas acrescentar o método subTotal() em Product usando quantity como parâmetro na classe.
-E então eu fiz dessa forma.
+2. Entities 
+- Product (parâmetros: name, price)
+- Client (parâmetros: name, email, birth date)
+- OrderItem (parâmetros: quantity, price & método: subTotal())
+- Order (parâmetros: date (actual moment), order status & métodos: addItem, removeItem, total()) => apareceram os métodos add e remove porque uma lista foi criada para armazenar as informações de produto
+
+3. Enums
+- OrderStatus (PENDING_PAYMENT, PROCESSING, SHIPPED, DELIVERED)
+
+Contudo, a classe OrderItem estava me incomodando porque me parecia inútil, visto que eu poderia apenas acrescentar o método subTotal() em Product usando quantity como parâmetro na classe. Então, optei por fazer como exposto a seguir.
 
 Minha estrutura ficou assim:
+1. Application
+- Main
 
-- Application
-     Main
-- Entities 
-     Product (parâmetros: name, price, quantity & método: subtotal()) => método subTotal implementado
-     Client (parâmetros: name, email, birth date)
-     Order (parâmetros: date (actual moment), order status & métodos: addItem, removeItem, total()) 
-- Enums
-     OrderStatus (PENDING_PAYMENT, PROCESSING, COMPLETED, SHIPPED, DELIVERED) => Status COMPLETED criado porque me parecia razoável ter um estágio entre PROCESSING e SHIPPED para melhorar a gestão de informação.
+2. Entities 
+- Product (parâmetros: name, price, quantity & método: subtotal()) => método subTotal implementado
+- Client (parâmetros: name, email, birth date)
+- Order (parâmetros: date (actual moment), order status & métodos: addItem, removeItem, total()) 
+
+3. Enums
+- OrderStatus (PENDING_PAYMENT, PROCESSING, COMPLETED, SHIPPED, DELIVERED) => Status COMPLETED criado porque me parecia razoável ter um estágio entre PROCESSING e SHIPPED para melhorar a gestão de informação.
+
