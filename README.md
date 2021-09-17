@@ -20,7 +20,7 @@ O professor seguiu a seguinte estrutura:
 - Application
      Main
 - Entities 
-     Product (parâmetros: name, price)
+     \nProduct (parâmetros: name, price)
      Client (parâmetros: name, email, birth date)
      OrderItem (parâmetros: quantity, price & método: subTotal())
      Order (parâmetros: date (actual moment), order status & métodos: addItem, removeItem, total()) => apareceram os métodos add e remove porque uma lista foi criada para armazenar as informações de produto
