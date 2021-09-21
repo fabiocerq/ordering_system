@@ -1,6 +1,5 @@
 # ordering_system
 
-[PORTUGUÊS]
 Olá, esse é meu primeiro commit oficial e admito que não é um projeto nada complicado.
 Porém, como eu me desafiei para fazer uma mudança, resolvi subir no git e vou explicar o porquê.
 
